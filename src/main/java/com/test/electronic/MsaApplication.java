@@ -1,4 +1,4 @@
-package com.test.electronics;
+package com.test.electronic;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

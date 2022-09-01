@@ -16,6 +16,7 @@ import com.test.electronic.service.ElectronicService;
 
 @RestController
 public class ElectronicController {
+
 	
 	@Autowired
 	private ElectronicService eleservice;
@@ -23,6 +24,7 @@ public class ElectronicController {
 	@RequestMapping("/device")
 	public List<Electronics> getAllDevices()
 	{
+		System.out.println("hi");
 		List<Electronics> ele =eleservice.getAllDevices();
 		if(ele.size()<=0)
 			throw new UserNotFoundException("Sorry Devices are not Present");
